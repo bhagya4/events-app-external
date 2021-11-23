@@ -4,12 +4,13 @@ console.log(`process.env.SERVER = ${process.env.SERVER}`);
 // get the environment variable, but default to localhost:8082 if its not set
 const SERVER = process.env.SERVER ? process.env.SERVER : "http://localhost:8082";
 
-// express is a nodejs web server
+//express a nodejs web server
 // https://www.npmjs.com/package/express
 const express = require('express');
 
 // converts content in the request into parameter req.body
 // https://www.npmjs.com/package/body-parser
+// Comment edit by bhagya
 const bodyParser = require('body-parser');
 
 // express-handlebars is a templating library 
